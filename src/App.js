@@ -8,6 +8,14 @@ function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState([]);
 
+  const filterItem = (category) => {
+    const newItem = items.filter((item) => {
+      if(item.category === category) {
+        setMenuItems(newItem)
+      }
+    })
+  }
+
   return (
     <main>
       <section className='menu section'>
