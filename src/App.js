@@ -14,7 +14,7 @@ console.log(allCategories);
 function App() {
 
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterItem = (category) => {
     if(category === 'all') {
